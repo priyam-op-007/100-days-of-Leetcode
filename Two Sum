@@ -1,0 +1,35 @@
+https://leetcode.com/problems/two-sum/description/
+
+
+Java Code - 
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        System.out.println(nums);
+        int i = 0;
+        int[] arr = new int[2];
+        for(int j =1;j<nums.length;){
+            if(nums[i] + nums[j] == target && i != j){
+                arr[0] = i;
+                arr[1] = j;
+                return arr;
+            }
+            else{
+                if(j==nums.length-1){
+                j=0;
+                i++;
+                }
+                else{
+                     j++;
+                }
+
+            }
+            
+        }
+    
+
+    return arr;    
+    }
+   
+}
+
